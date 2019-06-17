@@ -1,0 +1,199 @@
+{
+    "code": "0000",
+    "toast": "",
+    "new_recommend_count_str": "",
+    "group": [
+        {
+            "topic": "咖啡融合冰淇淋",
+            "group_list": [
+                {
+                    "img_url": "https://www.starbucks.com.cn/images/products/affogato.jpg",
+                    "title": "阿馥奇朵™"
+                },
+                {
+                    "img_url": "https://www.starbucks.com.cn/images/products/cold-brew-malt.jpg",                  
+                    "title": "麦芽雪冷萃™"
+                },
+                {
+                    "img_url": "https://www.starbucks.com.cn/images/products/cold-brew-float.jpg",                   
+                    "title": "冷萃浮乐朵™"
+                },
+				 {
+				    "img_url": "https://www.starbucks.com.cn/images/products/instore-nitro-cold-brew-float.jpg",				   
+				    "title": "气致™冷萃浮乐朵™"
+				}
+            ]
+        },
+        {
+            "topic": "星巴克冷萃咖啡系列",
+            "group_list": [
+                {
+                    "img_url": "https://www.starbucks.com.cn/images/products/cold-brew.jpg",
+                    "title": "冷萃冰咖啡"
+                },
+                {
+                    "img_url": "https://www.starbucks.com.cn/images/products/vanilla-flavor-sweet-cream-cold-brew.jpg",
+                    "title": "轻甜奶油冷萃"
+                },
+                {
+                    "img_url": "https://www.starbucks.com.cn/images/products/cold-foam-cold-brew.jpg",
+                    "title": "绵云冷萃"
+                }        	
+            ]
+        },
+		 {
+		    "topic": "手工调制浓缩咖啡",
+		    "group_list": [
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/caffe-americano.jpg",
+		            "title": "美式咖啡（热/冷）"
+		        },
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/caffe-latte.jpg",
+		            "title": "拿铁（热/冷）"
+		        },
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/caffe-mocha.jpg",
+		            "title": "摩卡（热/冷)"
+		        },
+				 {
+				    "img_url": "https://www.starbucks.com.cn/images/products/cappuccino.jpg",
+				    "title": "卡布奇诺（热/冷）"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/caramel-macchiato.jpg",
+				    "title": "焦糖玛奇朵（热/冷）"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/espresso.jpg",
+				    "title": "浓缩咖啡"
+				},
+				 {
+				    "img_url": "https://www.starbucks.com.cn/images/products/flat-white.jpg",
+				    "title": "馥芮白™"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/hazelnut-flavored-latte.jpg",
+				    "title": "榛果风味拿铁（热/冷）"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/vanilla-flavored-latte.jpg",
+				    "title": "香草风味拿铁（热/冷）"
+				}
+		    ]
+		},
+		{
+		    "topic": "星冰乐®",
+		    "group_list": [
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/caramel-espresso-frappuccino.jpg",
+		            "title": "焦糖浓缩咖啡星冰乐"
+		        },
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/green-tea-frappuccino.jpg",
+		            "title": "抹茶星冰乐"
+		        },
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/mango-passion-tea.jpg",
+		            "title": "芒果西番莲果茶星冰乐"
+		        },
+				 {
+				    "img_url": "https://www.starbucks.com.cn/images/products/mocha-frappuccino.jpg",
+				    "title": "摩卡星冰乐"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/mocha-java-chip-frappuccino.jpg",
+				    "title": "摩卡可可碎片星冰乐"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/vanilla-flavored-cream-frappuccino-blended-beverage.jpg",
+				    "title": "香草风味星冰乐"
+				}
+		    ]
+		},
+		{
+		    "topic": "星巴克玩味冰调™",
+		    "group_list": [
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/blueberry-passion-pearl-fizz.jpg",
+		            "title": "蓝莓星空"
+		        },
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/citrus-mint-mojito.jpg",
+		            "title": "橘香茉吉托"
+		        },
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/cold-brew-lemon-sour.jpg",
+		            "title": "酸柠浮冷萃"
+		        },
+				 {
+				    "img_url": "https://www.starbucks.com.cn/images/products/peach-shrub-fizz.jpg",
+				    "title": "醋意桃桃"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/pomegranate-pearl-fizz.jpg",
+				    "title": "石榴仲夏梦"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/sparkling-espresso-tonic.jpg",
+				    "title": "气炫冰山美式"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/sparkling-pink-pom-cold-brew.jpg",
+				    "title": "璃光石榴冷萃"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/triple-citrus.jpg",
+				    "title": "橙柚派对"
+				}
+		    ]
+		},
+		{
+		    "topic": "气致™冷萃咖啡",
+		    "group_list": [
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/nitro-cold-brew.jpg",
+		            "title": "气致™冷萃咖啡"
+		        }
+		    ]
+		},
+		{
+		    "topic": "经典巧克力饮品",
+		    "group_list": [
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/signature-chocolate-beverage.jpg",
+		            "title": "经典巧克力饮品（热/冷）"
+		        }
+		    ]
+		},
+		{
+		    "topic": "茶瓦纳™",
+		    "group_list": [
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/black-tea-latte.jpg",
+		            "title": "红茶拿铁（热/冷）"
+		        },
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/green-tea-latte.jpg",
+		            "title": "抹茶拿铁（热/冷）"
+		        },
+		        {
+		            "img_url": "https://www.starbucks.com.cn/images/products/iced-shaken-honey-ruby-grapefruit-black-tea.jpg",
+		            "title": "茶瓦纳™ 冰摇柚柚蜂蜜红茶"
+		        },
+				 {
+				    "img_url": "https://www.starbucks.com.cn/images/products/blackcurrant-raspberry.jpg",
+				    "title": "冰摇红莓黑加仑茶"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/iced-shaken-mango-herbal-juiced-tea.jpg",
+				    "title": "冰摇芒果花草茶"
+				},
+				{
+				    "img_url": "https://www.starbucks.com.cn/images/products/iced-shaken-peach-green-tea.jpg",
+				    "title": "茶瓦纳™冰摇桃桃乌龙茶"
+				}
+		    ]
+		}
+    ]
+}

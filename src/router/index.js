@@ -11,13 +11,18 @@ import Vegetable from '@/star/Vegetable/vegetable'
 import Login from '../components/login'
 import Register from '../components/register'
 import Club from '../components/club'
+import Drinks from '@/star/Vegetable/drinks.vue'
+import Foods from '@/star/Vegetable/foods.vue'
+import Coffee from '@/star/Vegetable/coffee.vue'
+import Product from '@/star/Vegetable/product.vue'
+import Drinkall from '@/star/Vegetable/drinkAll.vue'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
+      name: '',
       component: Home
     },
     {path:'/home',name:'Home',component:Home},
@@ -28,6 +33,13 @@ export default new Router({
       {path:'register',component:Register},
       {path:'club',component:Club},
     ]},
-    {path:'/vegetable',name:'Vegetable',component:Vegetable}
+    {path:'/vegetable',name:'Vegetable',component:Vegetable},
+		{path:'/vegetable/drinks',name:'Drinks',component:Drinks,children:[
+			 {path:'drinkAll',component:Drinkall},
+		]},
+		{path:'/vegetable/foods',name:'Foods',component:Foods},
+		{path:'/vegetable/coffee',name:'Coffee',component:Coffee},
+		{path:'/vegetable/product',name:'Product',component:Product}
+
   ]
 })

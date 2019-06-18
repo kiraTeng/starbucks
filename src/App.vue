@@ -14,7 +14,7 @@
   	Footer
   },
   beforeCreate(){
-  	this.$router.push('/home')
+  	this.$router.push('/vegetable')
   },
   mounted(){
   	obj.setRem();
@@ -29,9 +29,10 @@
 	}
 	body{
 		font-size: 15px;
+		
 	}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Gotham", Helvetica, Arial, PingFangSC-Regular, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;

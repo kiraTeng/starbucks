@@ -7,7 +7,8 @@ import 'font-awesome/css/font-awesome.css'
 Vue.config.productionTip = false
 
 
-
+import axios from 'axios'
+Vue.prototype.$axios=axios;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

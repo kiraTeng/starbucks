@@ -42,8 +42,9 @@
 }
 </script>
 
-<style>
+<style lang="less">
  .footer{
+	 max-width: 640px;
  	height: 50/64rem;
  	width: 100%;
  	background-color: #fff;
@@ -54,6 +55,7 @@
  	justify-content: center;
  	align-items: center;
  	padding: 5/64rem 0;
+	z-index: 1;
  }
  .item{
 		width: 20%;

@@ -20,7 +20,7 @@ export default new Router({
       name: 'Home',
       component: Home
     },
-    {path:'/home',name:'Home',component:Home},
+    {path:'/home',name:'Home2',component:Home},
     {path:'/house',name:'House',component:House},
     {path:'/more',name:'More',component:More},
     {path:'/mine',name:'Mine',component:Mine,children:[

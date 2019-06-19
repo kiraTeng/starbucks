@@ -21,7 +21,8 @@
 		<div class="drinkCon">
 			<router-view></router-view>
 		</div>
-		
+		<button class="searchMenu" v-show="btnShow" @click="showMenu()">搜索菜单</button>
+		<Searchmenu v-show="menuShow"></Searchmenu>
 	</div>
 	
 </template>
@@ -35,11 +36,26 @@
 				isChosen:1
 			};		
 		},
+		computed:{
+			menuShow(){
+				return this.$store.state.menuShow
+			},
+			btnShow(){
+				return this.$store.state.btn
+			}
+			
+		},
 		components: {			
 			Advertisement,
+			Searchmenu
 		},
 		beforeCreate() {
 			this.$router.push('/vegetable/drinks/drinkAll')
+		},
+		methods:{
+			showMenu(){
+				this.$store.commit('show')
+			}
 		}
 	}
 </script>

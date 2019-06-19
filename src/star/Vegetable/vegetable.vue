@@ -1,5 +1,5 @@
 <template>
-	<div class="menu searchPage">
+	<div :class="{menu:true,searchPage:menuShow}">
 		<h1>菜单</h1>
 		<ul>
 			<li :class="{active:currentIndex==1}" @click="currentIndex=1">
@@ -60,8 +60,8 @@
 				<Newitem v-for="(item,index) in newArrivalData" :key='index' :imgSrc='item.img_url' :product='item.topic_title'></Newitem>
 			</ul>
 		</div>
-		<button class="searchMenu">搜索菜单</button>
-		<!-- <Searchmenu></Searchmenu> -->
+		<button class="searchMenu" v-show="btnShow" @click="showMenu()">搜索菜单</button>
+		<Searchmenu v-show="menuShow"></Searchmenu>
 	</div>
 
 </template>
@@ -78,6 +78,15 @@
 				newArrivalData: []
 			}
 		},
+		computed:{
+			menuShow(){
+				return this.$store.state.menuShow
+			},
+			btnShow(){
+				return this.$store.state.btn
+			}
+			
+		},
 		components: {
 			Banneritem,
 			Advertisement,
@@ -87,41 +96,47 @@
 		mounted() {
 			this.getNewData()
 		},
+		beforeCreate() {
+			window.scrollTo(0,0);
+		},
 		methods: {
 			getNewData() {
 				this.$axios.get('../../../static/data/new.json')
 					.then(res => {
-						console.log(res.data.group)
 						this.newArrivalData = res.data.group
 					})
+			},
+			showMenu(){
+				this.$store.commit('show')
 			}
 		}
 	}
 </script>
 
 <style lang="less">
+	button.searchMenu {
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38);
+		border-radius: 20px;
+		position: fixed;
+		right: 16/50rem;
+		bottom: 71/50rem;
+		background: #00A862;
+		color: #fff;
+		font-weight: 700;
+		font-size: 16/50rem;
+		padding: 12/50rem 24/50rem;
+		border: 1px solid #00A862;
+		outline: none;			
+	}
 	div.searchPage{
 		&::-webkit-scrollbar {
 			display: none;
 		}
-// 		height:500/50rem;
-// 		overflow-y:hidden;
+		height:500/50rem;
+		overflow-y:hidden;
 	}
 	.menu {
-		.searchMenu {
-			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38);
-			border-radius: 20px;
-			position: fixed;
-			right: 16/50rem;
-			bottom: 71/50rem;
-			background: #00A862;
-			color: #fff;
-			font-weight: 700;
-			font-size: 16/50rem;
-			padding: 12/50rem 24/50rem;
-			border: 1px solid #00A862;
-			outline: none;			
-		}
+		
 
 		padding-top: .32rem;
 		position: relative;

@@ -1,0 +1,29 @@
+{
+    "code": "0000",
+    "toast": "",
+    "new_recommend_count_str": "",
+    "group": [
+        {
+            "topic": "咖啡融合冰淇淋",
+            "group_list": [
+                {
+                    "img_url": "https://www.starbucks.com.cn/images/products/blueberry-and-cookie-style-cheesecake.jpg",
+                    "title": "蓝莓曲奇风轻乳酪蛋糕™"
+                },
+                {
+                    "img_url": "https://www.starbucks.com.cn/images/products/caramel-macchiato.jpg",                  
+                    "title": "焦糖玛奇朵（热/冷）"
+                },
+                {
+                    "img_url": "https://www.starbucks.com.cn/images/house-blend-coffee-beans.png",                   
+                    "title": "星巴克®首选咖啡豆"
+                },
+				 {
+				    "img_url": "https://www.starbucks.com.cn/images/kenya-coffee-beans.png",				   
+				    "title": "星巴克®肯亚咖啡豆"
+				}
+            ]
+        }
+        
+    ]
+}

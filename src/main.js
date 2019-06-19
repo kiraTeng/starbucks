@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import 'font-awesome/css/font-awesome.css'
 Vue.config.productionTip = false
-
+import {store} from '@/store/store.js'
 
 import axios from 'axios'
 Vue.prototype.$axios=axios;
@@ -14,5 +14,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+	store
 })

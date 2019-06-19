@@ -14,7 +14,7 @@
   	Footer
   },
   beforeCreate(){
-  	this.$router.push('/vegetable')
+  	this.$router.push('/home')
   },
   mounted(){
   	obj.setRem();

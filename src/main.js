@@ -11,7 +11,7 @@ import Video from 'video.js'
 
 Vue.prototype.$video = Video
 Vue.config.productionTip = false
-import {store} from '@/store/store.js'
+
 
 import axios from 'axios'
 Vue.prototype.$axios=axios;
@@ -21,9 +21,5 @@ new Vue({
   router,
   components: { App },
   template: '<App/>',
-<<<<<<< HEAD
-   store 
-=======
 	store
->>>>>>> 42881b44b362adec9560b65fbb9156346767ef8b
 })

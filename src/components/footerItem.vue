@@ -20,11 +20,7 @@
 		},
 		methods:{
 			click(){
-<<<<<<< HEAD
 				this.$emit('change',this.mark)
-=======
-				this.$emit('change',[this.mark,this.footerShow])
->>>>>>> 42881b44b362adec9560b65fbb9156346767ef8b
 				this.$router.push('../../'+this.mark)
 			}
 		}

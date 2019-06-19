@@ -21,7 +21,7 @@
 		methods:{
 			click(){
 				this.$emit('change',this.mark)
-				this.$router.push(this.mark)
+				this.$router.push('../../'+this.mark)
 			}
 		}
 	}

@@ -96,6 +96,9 @@
 		mounted() {
 			this.getNewData()
 		},
+		beforeCreate() {
+			window.scrollTo(0,0);
+		},
 		methods: {
 			getNewData() {
 				this.$axios.get('../../../static/data/new.json')

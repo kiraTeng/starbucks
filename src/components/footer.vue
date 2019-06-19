@@ -55,7 +55,6 @@
  	justify-content: center;
  	align-items: center;
  	padding: 5/64rem 0;
-	z-index: 1;
  }
  .item{
 		width: 20%;

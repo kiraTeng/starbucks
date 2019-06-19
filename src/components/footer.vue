@@ -1,22 +1,22 @@
 <template>
-  <div class="footer">
-    <Footer title="主页" mark='home' :selected='selected' @change='getVal'>
+  <div class="footer" v-show="footerShow">
+    <Footer title="主页" mark='home' :selected='selected' :footerShow=true  @change='getVal'>
     	<img src="../assets/images/icon-home.png" slot='normalImg'/>
     	<img src="../assets/images/icon-home-active.png" slot='activeImg'/>
     </Footer>
-    <Footer title="门店" mark='house' :selected='selected' @change='getVal'>
+    <Footer title="门店" mark='house' :selected='selected' :footerShow=true  @change='getVal'>
     	<img src="../assets/images/icon-stores.png" slot='normalImg'/>
     	<img src="../assets/images/icon-stores-active.png" slot='activeImg'/>
     </Footer>
-    <Footer title="我的账户" mark='mine' :selected='selected' @change='getVal'>
+    <Footer title="我的账户" mark='mine' :selected='selected' :footerShow=true  @change='getVal'>
     	<img src="../assets/images/icon-account.png" slot='normalImg'/>
     	<img src="../assets/images/icon-account-active.png" slot='activeImg'/>
     </Footer>
-    <Footer title="菜单" mark='vegetable' :selected='selected' @change='getVal'>
+    <Footer title="菜单" mark='vegetable' :selected='selected' :footerShow=true  @change='getVal'>
     	<img src="../assets/images/icon-menu.png" slot='normalImg'/>
     	<img src="../assets/images/icon-menu-active.png" slot='activeImg'/>
     </Footer>
-    <Footer title="更多" mark='more' :selected='selected' @change='getVal'>
+    <Footer title="更多" mark='more' :selected='selected' :footerShow=false  @change='getVal'>
     	<img src="../assets/images/icon-more.png" slot='normalImg'/>
     	<img src="../assets/images/icon-more-active.png" slot='activeImg'/>
     </Footer>
@@ -28,15 +28,20 @@
   export default {
 	data(){
 		return {
-			  selected:'home'
+			  selected:'home',
+			  footerShow:true
 		}
+	},
+	beforeCreate() {
+		this.footerShow=true
 	},
 	 components:{
 	 	 Footer
 	 },
 	methods:{
 		 getVal(val){
-		 	this.selected=val
+		 	this.selected=val[0]
+			this.footerShow=val[1]
 		 }
 	}
 }

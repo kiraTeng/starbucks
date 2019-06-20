@@ -4,14 +4,20 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'font-awesome/css/font-awesome.css'
+
 Vue.config.productionTip = false
 
-
+import VueAMap from 'vue-amap'
+Vue.use(VueAMap)
+VueAMap.initAMapApiLoader({
+	key:'a1ef59f64cf14b075cbf47801df5a183'
+})
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  
 })

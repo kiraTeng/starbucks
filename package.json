@@ -13,8 +13,12 @@
     "axios": "^0.19.0",
     "ginkgo-map": "^1.0.2",
     "swiper": "^4.5.0",
+    "video.js": "^7.5.5",
     "vue": "^2.5.2",
+<<<<<<< HEAD
     "vue-amap": "^0.5.9",
+=======
+>>>>>>> f55de82154a4ac02770a6a37f3836006e9e8c83d
     "vue-router": "^3.0.1",
     "vuex": "^3.1.1"
   },
@@ -53,6 +57,7 @@
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
+    "vue-video": "^0.1.7",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",

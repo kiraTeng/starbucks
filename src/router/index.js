@@ -11,23 +11,46 @@ import Vegetable from '@/star/Vegetable/vegetable'
 import Login from '../components/login'
 import Register from '../components/register'
 import Club from '../components/club'
+
+import Download from '../components/registerDetail'
+import Mobile from '../components/mobile'
+import Apple from '../components/apple'
+import Drinks from '@/star/Vegetable/drinks.vue'
+import Foods from '@/star/Vegetable/foods.vue'
+import Coffee from '@/star/Vegetable/coffee.vue'
+import Product from '@/star/Vegetable/product.vue'
+import Drinkall from '@/star/Vegetable/drinkAll.vue'
+
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
+      name: '',
       component: Home
     },
+
+    {path:'/registerDetail',name:'Download',component:Download,children:[
+       {path:'/mobile',name:'Mobile',component:Mobile},
+       {path:'/apple',name:'Apple',component:Apple}
+    
+    ]},
     {path:'/home',name:'Home',component:Home},
-    {path:'/house',name:'House',component:House},
+   {path:'/house',name:'House',component:House},
     {path:'/more',name:'More',component:More},
     {path:'/mine',name:'Mine',component:Mine,children:[
       {path:'login',component:Login},
       {path:'register',component:Register},
-      {path:'club',component:Club},
+      {path:'club',component:Club}
     ]},
-    {path:'/vegetable',name:'Vegetable',component:Vegetable}
+    {path:'/vegetable',name:'Vegetable',component:Vegetable},
+		{path:'/vegetable/drinks',name:'Drinks',component:Drinks,children:[
+			 {path:'drinkAll',component:Drinkall},
+		]},
+		{path:'/vegetable/foods',name:'Foods',component:Foods},
+		{path:'/vegetable/coffee',name:'Coffee',component:Coffee},
+		{path:'/vegetable/product',name:'Product',component:Product}
+
   ]
 })

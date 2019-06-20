@@ -10,14 +10,19 @@
 	}
 </script>
 
-<style>
+<style lang="less">
   .black{
 	width: 100%;
+	padding: 15/64rem 10/64rem;
+	background-color: #FFFFFF;
 	/*border: dashed 1px red;*/
-	padding-left: 50/64rem;
+	padding-left: 15/50rem;
+	height: 62/50rem;
+	display: flex;
+	align-items: center;
 	box-sizing: border-box;
 	h2{
-		text-indent: 1em;
+		
 	}
  }	
 </style>

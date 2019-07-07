@@ -1,8 +1,9 @@
 <template>
-	<div class="myderess" >
+	<div class="myderess"  v-show="dress">
 		<div class="showderss">
-			<h2>深圳华强广场酒店店</h2>
-		<p class="dz">福田区 华强广场酒店大堂 华强北路</p>
+			<img src="../assets/map/icon-close.svg" class="myimg" @click="showdesc"/>
+			<h2>{{showDress.title}}</h2>
+		<p class="dz">{{showDress.desc}}</p>
 		<p class="color"><img src="../assets/map/icon-contact.svg"/> 0755-83226283</p>
 		<p class="color"><img src="../assets/map/icon-directions.svg"/> 获取路线</p>
 		<p class="ystime">营业时间</p>
@@ -28,6 +29,20 @@
 
 <script>
 	export default{
+		computed:{
+			dress(){
+				return this.$store.state.showIt;
+			},
+			showDress(){
+				return this.$store.state.list[0]
+			}
+		},
+		methods:{
+			showdesc(){
+			this.$store.commit('map')
+		}
+		}
+		
 		
 	}
 </script>
@@ -92,6 +107,11 @@
 				height: 24/64rem;
 				width: 24/64rem;
 			}
+		}
+		.myimg{
+			position: absolute;
+			right: 20/64rem;
+			top: 20/64rem;
 		}
 	}
 </style>

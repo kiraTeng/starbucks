@@ -78,6 +78,7 @@
 					<img :src="item.url2" class="checkgo" v-show="item.check" />
 				</li>
 			</ul>
+			 <span class="yes" @click="showtime" >确认</span>
 		</div>
 
 	</div>
@@ -200,6 +201,8 @@
 		position: absolute;
 		top: 50/64rem;
 		width: 100%;
+		
+		z-index: 9999;
 		.now {
 			padding-bottom: 10/64rem;
 			font-size: 12/64rem;
@@ -290,8 +293,8 @@
 		box-sizing: border-box;
 		top: 0;
 		width: 100%;
-		height: 100%;
-		overflow: hidden;
+		height:700/64rem;
+		overflow-y: hidden;
 		background: #fff;
 		z-index: 999;
 		.close {
@@ -346,5 +349,18 @@
 	.container {
 		width: 100%;
 		height: 300/64rem;
+	}
+	.yes{
+		width: 70/64rem;
+		border-radius: 20/64rem;
+		text-align: center;
+		display: inline-block;
+		height: 30/64rem;
+		line-height: 30/64rem;
+		font-size:16/64rem;
+	    color: #fff;
+	    background: #00A862;
+	    margin-left: 300/64rem;
+	    margin-top: 10/64rem;
 	}
 </style>

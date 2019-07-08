@@ -2,13 +2,13 @@
 	<div>
 		<Header title="登录或创建一个新帐户 🌟"></Header>
 		<ul class="nav">
-			<li :class="{active:currentIndex==0}"  @click="currentIndex=0">
+			<li :class="{active:number==0}"  @click="changeNum(0)">
 				<router-link to='/mine/login'>登录</router-link>
 			</li>
-			<li :class="{active:currentIndex==1}"  @click="currentIndex=1">
+			<li :class="{active:number==1}"  @click="changeNum(1)">
 				<router-link to='/mine/register'>注册</router-link>
 			</li>
-			<li :class="{active:currentIndex==2}"  @click="currentIndex=2">
+			<li :class="{active:number==2}"  @click="changeNum(2)">
 				<router-link to='/mine/club'>关于星享俱乐部</router-link>
 			</li>
 		</ul>
@@ -22,16 +22,22 @@
 	import Header from '../../components/header'
 	import Login from '../../components/login'
 	export default{
-		data(){
-			return {
-				currentIndex:0
+		computed:{
+			number(){
+				return this.$store.state.index
 			}
 		},
 		beforeCreate(){
 			this.$router.push('/mine/login')
+			
 		},
 		components:{
 			Header,Login
+		},
+		methods:{
+			changeNum(index){
+				this.$store.state.index=index;
+			}
 		}
 	}
 </script>
@@ -41,6 +47,8 @@
 		height: 55/64rem;
 		padding: 15/64rem;
 		box-sizing: border-box;
+		background-color: #fff;
+		border-bottom: solid 2px #F2F2F2;
 		li{
 			float: left;
 			list-style: none;

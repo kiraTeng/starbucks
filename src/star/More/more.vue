@@ -8,6 +8,7 @@
 </template>
 
 <script>
+
 	import MoreBD from '@/components/moreBD';
 	import Moreft from '@/components/more-footer';
 	export default {
@@ -38,6 +39,7 @@
 		
 	
 	}
+
 </script>
 
 <style lang="less">

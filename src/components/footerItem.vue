@@ -9,7 +9,7 @@
 
 <script>
 	export  default{
-		props:['title','mark','selected','footerShow'],
+		props:['title','mark','selected',],
 		computed:{
 			bol(){
 				if(this.mark == this.selected){
@@ -20,8 +20,9 @@
 		},
 		methods:{
 			click(){
-				this.$emit('change',[this.mark,this.footerShow])
+				this.$emit('change',this.mark)
 				this.$router.push('../../'+this.mark)
+				
 			}
 		}
 	}

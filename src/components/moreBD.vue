@@ -2,9 +2,9 @@
 	<div class="moreBD">
 		<div class="more">
 			<ul>
-				<li @click="fn('house')">门店</li>
-				<li>星享俱乐部</li>
-				<li>菜单</li>
+				<li>门店</li>
+				<li >星享俱乐部</li>
+				<li >菜单</li>
 				<li class="line"></li>
 				<li>星巴克移动应用</li>
 				<li>星礼卡</li>
@@ -19,7 +19,7 @@
 			</ul>
 			<div class="moreFt-con">
 				<a href="#"><img src="../assets/home/icon-account.png" alt=""></a>
-				<span>登录</span>
+				<span >登录</span>
 				<div class="zhuce">注册</div>
 			</div>
 		</div>
@@ -33,11 +33,7 @@
 
 			};
 		},
-		methods:{
-			fn(a){
-				this.$router.push('../../'+a)
-			}
-		}
+		
 	}
 </script>
 
@@ -95,7 +91,9 @@
 					margin-right: 24/50rem;
 					color: #00A862;
 				}
-
+                 img{
+					 margin-right: 4/50rem;
+				 }
 				.zhuce {
 					background: none;
 					border: 1px solid #00A862;

@@ -22,7 +22,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: '',
+      name: 'Home',
       component: Home
     },
     {path:'/home',name:'Home2',component:Home},

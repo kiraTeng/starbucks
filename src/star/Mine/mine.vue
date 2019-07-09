@@ -13,7 +13,9 @@
 			</li>
 		</ul>
 		<div class="show">
-			<router-view></router-view>
+			<keep-alive>
+				<router-view></router-view>
+			</keep-alive>
 		</div>
 	</div>
 </template>
@@ -27,10 +29,7 @@
 				return this.$store.state.index
 			}
 		},
-		beforeCreate(){
-			this.$router.push('/mine/login')
-			
-		},
+	
 		components:{
 			Header,Login
 		},
@@ -38,7 +37,7 @@
 			changeNum(index){
 				this.$store.state.index=index;
 			}
-		}
+		},
 	}
 </script>
 <style lang="less">

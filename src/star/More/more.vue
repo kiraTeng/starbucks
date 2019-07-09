@@ -24,7 +24,7 @@
 			close(){
 				console.log(111)
 				this.isShow= false;
-				this.$router.push("/home")
+				this.$router.go(-1)
 			}
 		
 		

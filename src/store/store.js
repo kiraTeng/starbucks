@@ -39,6 +39,11 @@ export const store = new Vuex.Store({
 			state.index = 1
 			console.log(state.index)
 		},
+		myClose(state,path){
+			if(path=='/mine/login') state.index = 0;
+			else if(path=='/mine/register') state.index = 1;
+			else if(path=='/mine/club') state.index = 2;
+		},
 		show(state) {
 			state.menuShow = true;
 			state.btn = false

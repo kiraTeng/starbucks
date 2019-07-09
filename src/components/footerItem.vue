@@ -24,7 +24,7 @@
 				this.$router.push('../../'+this.mark)
 				
 			}
-		}
+		},
 	}
 </script>
 

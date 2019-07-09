@@ -27,7 +27,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
+      name: 'default',
       component: Home
     },
 
@@ -39,7 +39,7 @@ export default new Router({
     {path:'/home',name:'Home',component:Home},
    {path:'/house',name:'House',component:House},
     {path:'/more',name:'More',component:More},
-    {path:'/mine',name:'Mine',component:Mine,children:[
+    {path:'/mine',name:'Mine',component:Mine,redirect:'/Mine/login',children:[
       {path:'login',component:Login},
       {path:'register',component:Register},
       {path:'club',component:Club}

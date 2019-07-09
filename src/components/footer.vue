@@ -51,6 +51,13 @@
 		a(){
 			
 		}
+	},
+	watch:{
+		$route(v){
+			let path = v.path.split('/')[1]
+			this.selected = path
+			this.$store.commit('myClose',v.path)
+		}
 	}
 }
 </script>

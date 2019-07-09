@@ -2,9 +2,9 @@
 	<div class="moreBD">
 		<div class="more">
 			<ul>
-				<li>门店</li>
-				<li >星享俱乐部</li>
-				<li >菜单</li>
+				<router-link to="/house" tag="li">门店</router-link>
+				<router-link to="/mine/club" tag="li">星享俱乐部</router-link>
+				<router-link to="/vegetable" tag="li">菜单</router-link>
 				<li class="line"></li>
 				<li>星巴克移动应用</li>
 				<li>星礼卡</li>
@@ -19,8 +19,8 @@
 			</ul>
 			<div class="moreFt-con">
 				<a href="#"><img src="../assets/home/icon-account.png" alt=""></a>
-				<span >登录</span>
-				<div class="zhuce">注册</div>
+				<router-link to='/mine/login' tag='span'>登录</router-link>
+				<router-link to="/mine/register" tag='div' class="zhuce">注册</router-link>
 			</div>
 		</div>
 	</div>
